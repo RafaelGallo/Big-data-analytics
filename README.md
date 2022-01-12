@@ -1,2 +1,1 @@
-# Big-data-analytics
-Big data - Analytics r, python
+# Modelos de machine learning no R
