@@ -14,6 +14,7 @@
 [![](https://img.shields.io/badge/Caret-orange.svg)](https://caret.tidyverse.org/)
 
 
+![App Screenshot](https://image.freepik.com/vetores-gratis/fundo-de-tecnologia-digital-abstrata-baixa-poli-linhas-de-conexao_1017-25550.jpg)
 
 ## Autores
 
@@ -90,8 +91,3 @@ print(paste('Decision Tree Accuracy',sum(diag(tab2))/sum(tab2)))
 print("Confusion Matrix Para Random Forest"); table(testing$Churn, pred_rf)
 
 ```
-
-
-## Screenshots
-
-![App Screenshot](https://cienciaenegocios.com/wp-content/uploads/2018/10/implement-1.png)
