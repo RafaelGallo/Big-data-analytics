@@ -23,8 +23,8 @@
 ## Projetos realizado nesse projeto
 
 - Análise séries temporais - Previsão preço da ação Vale
-- Big data analytics Previsão de tempo
-- Customer Churn Analytics 
+- Big data analytics: Previsão de tempo
+- Model machine learning: Customer Churn Analytics 
 - Mineração de Regra de Associação
 - Visualizações Interativas 
 
