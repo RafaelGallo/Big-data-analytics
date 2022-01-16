@@ -22,7 +22,7 @@
 
 ## Projetos realizado nesse projeto
 
-- Análise séries temporais - Ações
+- Análise séries temporais - Previsão preço da ação Vale
 - Big data analytics Previsão de tempo
 - Customer Churn Analytics 
 - Mineração de Regra de Associação
