@@ -95,9 +95,3 @@ print("Confusion Matrix Para Random Forest"); table(testing$Churn, pred_rf)
 ## Screenshots
 
 ![App Screenshot](https://cienciaenegocios.com/wp-content/uploads/2018/10/implement-1.png)
-
-
-## Feedback
-
-Se você tiver algum feedback, por favor nos deixe saber por meio de fake@fake.com
-
