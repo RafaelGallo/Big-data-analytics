@@ -1,5 +1,10 @@
 ## Big data analytics R
 
+Projetos voltados a big data analytics com r.
+
+
+## Etiquetas
+
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
@@ -12,6 +17,8 @@
 [![](https://img.shields.io/badge/Shiny-red.svg)](https://shiny.tidyverse.org/)
 [![](https://img.shields.io/badge/plotly-green.svg)](https://plotly.com/)
 [![](https://img.shields.io/badge/Caret-orange.svg)](https://caret.tidyverse.org/)
+
+
 
 ## Autores
 
@@ -92,7 +99,7 @@ print("Confusion Matrix Para Random Forest"); table(testing$Churn, pred_rf)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://cienciaenegocios.com/wp-content/uploads/2018/10/implement-1.png)
 
 
 ## Feedback
