@@ -1,0 +1,177 @@
+---
+title: "Projeto prático DSA - Modelo machine learning regressão linear"
+output:
+  html_document:
+    df_print: paged
+---
+
+Obs: Caso tenha problemas com a acentuação, consulte este link:
+https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
+
+Configurando o diretório de trabalho
+Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+Não use diretórios com espaço no nome
+
+
+
+# Massa de dados aleatória
+
+- Criando a massa de dados (apesar de aleatória, y possui 
+- Uma relação com os dados de x)
+```{r}
+x <- seq(0, 100)
+y <- 2 * x + 35
+
+# Imprimindo as variáveis
+x
+y
+
+```
+Crie um plot do relacionamento de x e y1
+```{r}
+# Relacionamento de x e y1
+plot(x, y1,
+     pch = 20, 
+     xlab = "Valor x",
+     ylab = "Valor y")
+```
+Crie um modelo de regressão para as duas variáveis x e y1
+```{r}
+# Modelo regressão linear
+model_rog_1 <- lm(y1 ~ x)
+model_rog_1
+
+# Súmario do modelo
+summary(model_rog)
+
+# Classe
+class(model_rog)
+```
+Capture os coeficentes
+```{r}
+# Coeficentes do modelo
+a <- model_rog_1$coefficients[1]
+b <- model_rog_1$coefficients[2]
+```
+
+Fórmula regressão linear
+```{r}
+# Fórmula regressão
+y2 <- a + b * x
+y2
+```
+Visualizando linha da regressão
+```{r}
+# Gráfico regressão
+plot(x,y2, lwd = 2)
+```
+Simulando outras possíveis linhas de regressão
+```{r}
+y3 <- (y2[51]-50*(b-1))+(b-1)*x
+y4 <- (y2[51]-50*(b+1))+(b+1)*x
+y5 <- (y2[51]-50*(b+2))+(b+2)*x
+```
+
+
+Pesquisa sobre idade e tempo de reação
+```{r}
+# Criando os dados
+Idade <- c(9,13,14,21,15,18,20,8,14,23,16,21,10,12,20,
+           9,13,5,15,21)
+
+Tempo <- c(17.87,13.75,12.72,6.98,11.01,10.48,10.19,19.11,
+           12.72,0.45,10.67,1.59,14.91,14.14,9.40,16.23,
+           12.74,20.64,12.34,6.44)
+```
+
+Gráfico de Dispersão (ScatterPlot)
+```{r}
+plot(Idade, Tempo,
+     xlab = "Idades",
+     ylab = "Tempo de reação",
+     main = "Gráfico regressão linear")
+```
+# Modelo 2 - Regressão linear
+```{r}
+# Modelo regressão linear 2
+model_reg_2 <- lm(Tempo ~ Idade)
+model_reg_2
+```
+Súmerio do modelo regressão linear
+```{r}
+# Summario do modelo regressão linear
+summary(model_reg_2)
+```
+Reta da regressão linear
+```{r}
+# Calcule a reta de regressão
+y <- a + b * x
+```
+
+
+# Modelo 3 - Relação entre altura e peso
+```{r}
+# Criando os dados
+alturas = c(176, 154, 138, 196, 132, 176, 181, 169, 150, 175)
+pesos = c(82, 49, 53, 112, 47, 69, 77, 71, 62, 78)
+```
+
+Gráfico altura e pesos
+```{r}
+plot(alturas, pesos, pch = 16, cex = 1.3, col = "blue", 
+     main = "Altura x Peso", 
+     ylab = "Peso Corporal (kg)", 
+     xlab = "Altura (cm)")
+```
+
+# Modelo regressão linear
+```{r}
+model_rog_3 <- lm(pesos ~ alturas)
+model_rog_3
+```
+
+# Súmario dos dados
+```{r}
+summary(model_rog_3)
+```
+
+Gráfico do modelo
+```{r}
+# Gere a linha de regressão
+plot(alturas, pesos,
+     main = "Modelo regressão linear",
+     xlab = "Alturas",
+     ylab = "Peso")
+abline(-70.4627, 0.8528)
+```
+
+Previsão do modelo
+```{r}
+# Faça as previsões de pesos com base na nova lista de alturas
+alturas2 = data.frame(c(179, 152, 134, 197, 131, 178, 185, 162, 155, 172))
+pred <- predict(model_rog_3, alturas2)
+pred
+```
+# Gráfico do modelo
+```{r}
+# Plot
+plot(alturas, pesos, pch = 16, cex = 1.3, 
+     col = "blue", 
+     main = "Altura x Peso", 
+     ylab = "Peso (kg)", 
+     xlab = "Altura (cm)")
+abline(lm(pesos ~ alturas)) # Construindo a linha de regressão
+```
+# Tamanho de uma das amostras
+```{r}
+# Obtendo o tamanho de uma das amostras de dados
+num <- length(alturas)
+num
+```
+Gráficos com a distribuição
+```{r}
+# Gerando gráficos com a distribuição dos resíduos
+par(mfrow = c(2,2))
+plot(modelo)
+```
+
