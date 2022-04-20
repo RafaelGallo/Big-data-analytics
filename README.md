@@ -25,7 +25,7 @@
 
 - Análise séries temporais - Previsão preço da ação Vale
 - Big data analytics: Previsão de tempo
-- Model machine learning: Customer Churn Analytics 
+- Modelo de aprendizado de máquina: Análise de rotatividade de clientes 
 - Mineração de Regra de Associação
 - Visualizações Interativas
 - Detectando Fraudes em Cartões de Crédito ML
