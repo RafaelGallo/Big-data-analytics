@@ -27,7 +27,8 @@
 - Big data analytics: Previsão de tempo
 - Model machine learning: Customer Churn Analytics 
 - Mineração de Regra de Associação
-- Visualizações Interativas 
+- Visualizações Interativas
+- Detectando Fraudes em Cartões de Crédito ML
 
 
 ## Exemplo - Machine learning em R
