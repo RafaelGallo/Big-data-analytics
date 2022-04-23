@@ -29,6 +29,7 @@
 - Mineração de Regra de Associação
 - Visualizações Interativas
 - Detectando Fraudes em Cartões de Crédito ML
+- Varejo com Market Basket Analysis
 
 
 ## Exemplo - Machine learning em R
