@@ -30,6 +30,7 @@
 - Visualizações Interativas
 - Detectando Fraudes em Cartões de Crédito ML
 - Varejo com Market Basket Analysis
+- Modelo análise de sentimento 
 
 
 ## Exemplo - Machine learning em R
